@@ -5,7 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Evorium</title>
+.enter-button{
+    margin-top:40px;
+    padding:16px 36px;
 
+    border:none;
+    border-radius:14px;
+
+    background:#111;
+    color:white;
+
+    font-size:16px;
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.enter-button:hover{
+    transform:translateY(-2px);
+}
 <style>
 
 *{
@@ -72,7 +90,9 @@ EVORIUM
 <div class="coming">
 Coming soon.
 </div>
-
+<button class="enter-button" onclick="window.location.href='dashboard.html'">
+    Enter Evorium
+</button>
 </div>
 
 </body>
