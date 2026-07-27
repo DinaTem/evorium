@@ -84,11 +84,6 @@ body{
     justify-content:space-between;
     align-items:center;
     margin-bottom:30px;
-        
-        position:sticky;
-top:0;
-background:white;
-z-index:20;
 padding-bottom:16px;
 }
 
@@ -110,11 +105,6 @@ padding-bottom:16px;
     font-weight:600;
     color:#777;
     margin-bottom:24px;
-    
-    position:sticky;
-top:60px;
-background:white;
-z-index:19;
 padding-bottom:12px;
 
 }
@@ -211,6 +201,21 @@ padding-bottom:12px;
     font-size:14px;
     color:#666;
 }
+
+    .calendar-top{
+    position:sticky;
+    top:0;
+    background:white;
+    z-index:30;
+}
+
+    .calendar-top{
+    position:sticky;
+    top:0;
+    background:white;
+    z-index:30;
+}
+    
 </style>
 
 </head>
@@ -236,7 +241,11 @@ padding-bottom:12px;
 <div class="content">
 
     <div class="panel schedule-panel">
+        
+        <div class="calendar-top">
+            
         <div class="calendar-header">
+            
     <button>←</button>
 
     <h2>28 Jul – 3 Aug</h2>
@@ -281,6 +290,8 @@ padding-bottom:12px;
     </div>
 
 </div>
+            </div>
+        
         <div class="calendar-grid">
 
     <div class="time-column">
