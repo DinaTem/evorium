@@ -148,15 +148,39 @@ body{
 
 .days-grid{
     flex:1;
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    border-left:1px solid #F2F2F2;
+}
+    .day-column{
+    position:relative;
+    border-right:1px solid #F2F2F2;
+    background-image:repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 35px,
+        #F2F2F2 36px
+    );
 }
 
 .lesson-card{
-    width:170px;
-    background:#F8F8FA;
+    position:absolute;
+    top:648px;
+    left:8px;
+    right:8px;
+
+    height:60px;
+
+    background:white;
     border-left:4px solid #6D5DF6;
+
     border-radius:12px;
-    padding:12px;
+
+    padding:10px;
+
     box-sizing:border-box;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.06);
 }
 
 .lesson-time{
@@ -299,16 +323,34 @@ body{
 
     <div class="days-grid">
 
-        <div class="lesson-card">
+        <div class="day-column">
+            <div class="lesson-card">
 
-            <div class="lesson-time">09:00–09:50</div>
+    <div class="lesson-time">09:00–09:50</div>
 
-            <div class="lesson-student">Emma</div>
+    <div class="lesson-student">Emma</div>
 
-            <div class="lesson-topic">Speaking</div>
+    <div class="lesson-topic">Speaking</div>
 
-        </div>
+</div>
+    </div>
 
+    <div class="day-column">
+    </div>
+
+    <div class="day-column">
+    </div>
+
+    <div class="day-column">
+    </div>
+
+    <div class="day-column">
+    </div>
+
+    <div class="day-column">
+    </div>
+
+    <div class="day-column">
     </div>
 
 </div>
