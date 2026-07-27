@@ -79,6 +79,24 @@ body{
 .schedule-panel{
     width:100%;
 }
+    .calendar-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.calendar-header button{
+    background:none;
+    border:none;
+    font-size:22px;
+    cursor:pointer;
+    color:#666;
+}
+
+.calendar-header button:hover{
+    color:#6D5DF6;
+}
 </style>
 
 </head>
@@ -104,8 +122,12 @@ body{
 <div class="content">
 
     <div class="panel schedule-panel">
-        <h2>Week Schedule</h2>
-    </div>
+        <div class="calendar-header">
+    <button>←</button>
+
+    <h2>This Week</h2>
+
+    <button>→</button>
 
 </div>
 
