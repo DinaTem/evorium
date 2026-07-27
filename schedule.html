@@ -105,6 +105,28 @@ body{
     color:#777;
     margin-bottom:24px;
 }
+.day-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    color:#666;
+    font-weight:600;
+}
+
+.day-number{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.active-day .day-number{
+    background:#6D5DF6;
+    color:white;
+}
 </style>
 
 </head>
@@ -139,13 +161,41 @@ body{
 
 </div>
 <div class="weekdays">
-    <div>Mon</div>
-    <div>Tue</div>
-    <div>Wed</div>
-    <div>Thu</div>
-    <div>Fri</div>
-    <div>Sat</div>
-    <div>Sun</div>
+    <div class="day-header active-day">
+        <span>Mon</span>
+        <span class="day-number">28</span>
+    </div>
+
+    <div class="day-header">
+        <span>Tue</span>
+        <span class="day-number">29</span>
+    </div>
+
+    <div class="day-header">
+        <span>Wed</span>
+        <span class="day-number">30</span>
+    </div>
+
+    <div class="day-header">
+        <span>Thu</span>
+        <span class="day-number">31</span>
+    </div>
+
+    <div class="day-header">
+        <span>Fri</span>
+        <span class="day-number">1</span>
+    </div>
+
+    <div class="day-header">
+        <span>Sat</span>
+        <span class="day-number">2</span>
+    </div>
+
+    <div class="day-header">
+        <span>Sun</span>
+        <span class="day-number">3</span>
+    </div>
+
 </div>
 </body>
 </html>
